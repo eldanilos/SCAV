@@ -1,0 +1,5 @@
+We create this script to convert and decode a given input using DCT.
+For that we create a DCT and IDCT functions and do the plots to compare the results.
+
+I wasn't be able to plot and compare it because the Ubuntu application does not recognize
+the screen to show it. But the script run without problems.

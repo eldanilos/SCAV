@@ -1,0 +1,7 @@
+In this exercise we transform the original Lenna image into b/w with the
+following command:
+
+	ffmpeg -i Lena.png -vf format=gray BWLena.jpg
+
+We choose the jpg format because we have to try to do the hardest compression
+and this is better than PNG.

@@ -1,0 +1,6 @@
+RLE is a basic form of data compression that converts consecutive identical values
+into a code consisting of the character and the number making the length of the run.
+Then, the more similar values there are, the more values can be compressed
+
+We codify a message "wwwaaadexxx" as "3w3a1d1e3x" by a sequential form, 
+so we can validate that it works.

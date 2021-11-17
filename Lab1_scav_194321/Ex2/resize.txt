@@ -1,0 +1,17 @@
+We can do this operations directly from the terminal using the following command
+for each one of the results:
+
+-Lena_320x240:
+	ffmpeg -i Lena.png -v scale=320:240 Lena_320x240.png
+We can appreciate that the image have less height and more height than the original
+
+-Lena_double_width:
+	ffmpeg -i Lena.png -vf scale=iw*2:ih Lena_double_width.png
+We can appreciate that we double the width comparing with the original
+
+-Lena_320_padding:
+	ffmpeg -i Lena.png -vf "scale=320:240:force_original_aspect_ratio=decrease,
+	pad = 320:240:(ow-iw)/2:(oh-ih)/2" Lena_320_padding.png
+We can apreciate the resize but in this case filling with black (padding) the sides.
+
+
