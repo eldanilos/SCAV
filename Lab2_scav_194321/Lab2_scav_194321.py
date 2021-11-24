@@ -68,14 +68,13 @@ def mono_h264(input):
 # Allows the user to choose wich variables of the input you would like to change.
 # Always that ask for a name it refers to the input file name plus the format.
 def main():
-
     # MENU that allows to pick wich option (exercise) we want to choose.
     print("Wich exercice do you want to execute? (1 to 4)")
     print("1 - Cut video")
     print("2 - YUV")
     print("3 - Resize")
     print("4 - Mono and H264 codecs")
-    opt = int(input())
+    opt = input()
 
     if opt == 1:
         # Name of the input.
@@ -100,7 +99,7 @@ def main():
 
     if opt == 4:
         # Name of the input.
-        print("Wich video do you want to resize?")
+        print("Wich video do you want code?")
         input = str(input())
         mono_h264(input)
     else:
